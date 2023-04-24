@@ -1,1 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    padding: -5px;
+    align-items: center;
+    display: flex;
+    background: #FF1493;
+}
+
+.logo {
+    width: 5%;
+    margin-left: 15px;
+    height: 100%;
+}
+
+.cabecalho{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__link {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 270px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #ffc0cb;
+}
+
+.apresentacao {
+    width: 100%;
+    margin: 27px;
+}
+
+.apresentacao__intro {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin: -10px;
+    margin-left: 50px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+}
+
+
+.apresentacao__texto {
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+    margin: 70px 15px;
+    justify-content: left;
+    padding: 0%;
+}
+
+.botao {
+    display: flex;
+    font-size: 1rem;
+    width: 25%;
+    margin: -65px;
+    margin-left: 60px;
+    color: #2F4F4F;
+    border: 2px solid #8A2BE2;
+    border-radius: 5px;
+    padding: 0%;
+    height: 25px;
+}
+
+.botao__texto {
+    text-align: center;
+}
+
+.texto {
+    margin: 50px;
+}
+
+.apresentacao__texto2 {
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+    margin: 78px 15px;
+    justify-content: left;
+    padding: 0%;
+ }
+
+.botao__cartao {
+    display: flex;
+    font-size: 1.0rem;
+    width: 20%;
+    height: 25px;
+    margin: -60px;
+    margin-left: 50px;
+    border: 2px solid #8A2BE2;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cartao {
+    width: 28%;
+    margin: 10px;
+    margin-left: 25px;
+}
+
+.botao__validar {
+    display: flex;
+    justify-content: center;
+    width: 6%;
+    margin: -40px;
+    height: 25px;
+    margin-left: 190px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #2F4F4F;
+    border: 2px solid #8A2BE2;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 3px 3px;
+}
+
+.botao__validar:hover {
+    background-color: #DA70D6;
+}
+
+.imagem {
+    width: 30%;
+    display: flex;
+    float: right;
+    margin: -300px;
+    margin-left: 40%;
+}
+
+.imagemproduto {
+    width: 30%;
+    height: 100%;
+    margin: -140px;
+    margin-left: -50%;
+}
+
+.imagemproduto2 {
+    width: 50%;
+    height: 100%;
+    margin: -140px;
+    margin-left: -50%;
+}
+
+.descricao {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: -180px;
+    margin-left: 40%;
+    text-shadow: 2px 5px 15px #FF1493;
+}
+
+.descricaoitens{
+    width: 30%;
+    margin: 5px;
+    margin-left: 130px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family:'Josefin Sans';
+}
+
+.rodape{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #FF1493;
+}
+
+.rodapefinal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.9rem;
+    background-color: #FF1493;
+    padding: 4px 4px;
+    width: 100%;
+}

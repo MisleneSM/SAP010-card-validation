@@ -6,27 +6,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="cabecalho">
-      <nav class="cabecalho__menu">
-        <!--<img class="logo" src="./Imagens/logoLoja.png" alt="Foto do logo da Loja">-->
-        <a class="cabecalho__link">Início</a>
+    <header class="header">
+      <img class="logo" src="./Imagens/Capa logo.png" alt="Foto do logo da Loja">
+      <nav class="cabecalho">
+        <a class="cabecalho__link" href="index.html">Início</a>
         <a class="cabecalho__link">Produtos</a>
         <a class="cabecalho__link">Contato</a>
         <a class="cabecalho__link">Sobre a loja</a>
       </nav>
     </header>
-    <main>
-      <h1>Bem vinda a nossa loja MS Makeup</h1>
-      <div>
-        <p>Por favor insira o produto que deseja realizar a compra:</p>
-        <imput type="text" id="" name="" required minlength="4" maxlength="8" size="10">
-        <p>Digite aqui os números do seu cartão de crédito</p>
-        <imput type="text" id="" name="" required minlength="4" maxlength="8" size="10"></imput>
-        <button>Validar</button>
+    <main class="apresentacao">
+      <h1 class="apresentacao__intro">Bem vinda(o) a nossa loja MS Makeup</h1>
+      <label class="apresentacao__texto" for="name"> * Insira o produto que deseja realizar a compra: *</label>
+      <div class="apresentacao__produtos">
+        <select class="botao" name="produtos" id="name">
+          <div>
+            <option class="botao__texto" value="rímel">Rímel</option>
+            <option class="botao__texto" value="esponja">Kit de Esponja</option>
+            <option class="botao__texto" value="batom">Batom Vermelho Matte</option>
+            <option class="botao__texto" value="base">Base Líquida</option>
+          </div>
+        </select>
       </div>
-
+      
+      <div class="texto">
+        <label class="apresentacao__texto2" for="name">* Digite os números do seu cartão: *</label>
+        <input class="botao__cartao" type="text" id="name" name="produtos" placeholder="Digite apenas números" required minlength="4" maxlength="9" size="20">
+      </div>
+      
+      <img class="cartao" src="./Imagens/cartaoIlustrativo.png" alt="Cartao Ilustrativo">
+      <button class="botao__validar" id="validar">Validar</button>
+      
+      <div class="imagem">
+        <img class="imagemproduto" src="./Imagens/Base.png" alt="Base Líquida Ilustrativa">
+        <img class="imagemproduto" src="./Imagens/batomvermelho.png" alt="Batom Vermelho Ilustrativo">
+        <img class="imagemproduto2" src="./Imagens/esponja.png" alt="Kit Esponja Ilustrativa">
+        <img class="imagemproduto" src="./Imagens/rimelpreto.png" alt="Rímel preto Ilustrativo">
+      </div>
+      
+      <div class="descricao">
+        <p class="descricaoitens"> Rímel Preto mais vendido - Valor R$40,00</p>
+        <p class="descricaoitens"> Kit Esponja com 7 unidades - Valor R$5,00</p>
+        <p class="descricaoitens"> Batom Vermelho em alta - Valor R$15,00</p>
+        <p class="descricaoitens"> Base Líquida mais vendida - Valor R$35,00</p>
+      </div>
     </main>
-  <!--<footer>Todos os direitos reservados - © 2023</footer>-->
-    <script src="index.js" type="module"></script>
+  <footer class="rodape">
+    <p class="rodapefinal">Todos os direitos reservados - © 2023</p>
+  </footer>
+  <script src="index.js" type="module"></script>
   </body>
 </html>
