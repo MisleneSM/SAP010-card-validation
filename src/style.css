@@ -2,37 +2,44 @@
 
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html {
+    background: #ffc0cb;
+}
 
 .header {
-    padding: -5px;
     align-items: center;
-    display: flex;
     background: #FF1493;
+    display: flex;
+    height: 65px;
+    width: 100%;
 }
 
 .logo {
+    margin: 10px;
+    margin-left: 10px;
     width: 5%;
-    margin-left: 15px;
-    height: 100%;
 }
 
 .cabecalho{
-    margin: 0px;
-    display: flex;
     align-items: center;
+    display: flex;
+    width: 100%;
 }
 
 .cabecalho__link {
     color: #000000;
     font-weight: bold;
     font-size: 1.1rem;
-    margin-left: 270px;
-    text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
+    justify-content:right;
+    margin-left: auto;
+    margin-right: 40px;
+    text-decoration: none;
 }
 
 body {
@@ -41,46 +48,47 @@ body {
     background-color: #ffc0cb;
 }
 
-.apresentacao {
+.main {
     width: 100%;
-    margin: 27px;
 }
 
-.apresentacao__intro {
+.intro {
+    color: #000000;
     font-size: 2.25rem;
+    margin: 0.5em 0px;
     font-weight: bold;
-    margin: -10px;
-    margin-left: 50px;
+    font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #000000;
 }
 
-
-.apresentacao__texto {
+.selectProduto {
     display: flex;
+    flex-direction: column;
+    margin: -1em 0px;
+}
+
+.selectIntro{
+    width: 500px;
+    text-align:left;
     font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
     color: #000000;
-    margin: 70px 15px;
-    justify-content: left;
-    padding: 0%;
+    margin: 3em 20px;
+    margin-left: 25px;
 }
 
 .botao {
-    display: flex;
-    font-size: 1rem;
-    width: 25%;
-    margin: -65px;
-    margin-left: 60px;
-    color: #2F4F4F;
     border: 2px solid #8A2BE2;
     border-radius: 5px;
-    padding: 0%;
+    color: #2F4F4F;
+    display: flex;
+    font-size: 1rem;
     height: 25px;
+    margin: -3em 70px;
+    width: 350px;
 }
 
 .botao__texto {
@@ -88,44 +96,54 @@ body {
 }
 
 .texto {
-    margin: 50px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: -1em 0px;
 }
 
-.apresentacao__texto2 {
-    display: flex;
+.numeroCartao {
+    width: 350px;
+    text-align:left;
     font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
     color: #000000;
-    margin: 78px 15px;
-    justify-content: left;
-    padding: 0%;
+    margin: 4em 0px;
+    margin-left: 80px;
  }
 
-.botao__cartao {
-    display: flex;
-    font-size: 1.0rem;
-    width: 20%;
+.cartaoNumber {
+    width: 250px;
     height: 25px;
-    margin: -60px;
-    margin-left: 50px;
+    font-size: 1.0rem;
     border: 2px solid #8A2BE2;
     border-radius: 5px;
     text-align: center;
+    margin: -4em 120px;
 }
 
 .cartao {
-    width: 28%;
-    margin: 10px;
-    margin-left: 25px;
+    width: 300px;
+    height: 200px;
+    background: #FF1493;
+    text-align: center;
+    border-radius: 20px;
+    margin: 6em 90px;
+}
+
+.chip {
+    width: 400px;
+    margin: -25px;
+    margin-left: -50px;
 }
 
 .botao__validar {
     display: flex;
     justify-content: center;
-    width: 6%;
-    margin: -40px;
+    width: 100px;
+    margin: -60px;
     height: 25px;
     margin-left: 190px;
     text-align: center;
@@ -142,45 +160,56 @@ body {
     background-color: #DA70D6;
 }
 
-.imagem {
-    width: 30%;
+.produtos {
+    width: 100%;
     display: flex;
-    float: right;
-    margin: -300px;
-    margin-left: 40%;
+    margin: -35px;
+    margin-top: -350px;
+    align-items: center;
+    flex-direction:initial;
+    justify-content:end;
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', 'sans-serif';
+    text-align: center;
+    gap: 40px;
+    text-shadow:  2px  5px  15px  #FF1493 ;
 }
 
-.imagemproduto {
-    width: 30%;
-    height: 100%;
-    margin: -140px;
-    margin-left: -50%;
+.descricaoItens {
+    width: 220px;
+    height: 200px;
+    margin-left: 0px;
 }
+
+.imagemproduto1 {
+    width: 170px;
+    height: 250px;
+    margin: -10px;
+    margin-left: 0px;
+}
+
 
 .imagemproduto2 {
-    width: 50%;
-    height: 100%;
-    margin: -140px;
-    margin-left: -50%;
+    width: 150px;
+    height: 250px;
+    margin: -10px;
+    margin-left: 0px;
 }
 
-.descricao {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    margin: -180px;
-    margin-left: 40%;
-    text-shadow: 2px 5px 15px #FF1493;
+.imagemproduto3 {
+    width: 220px;
+    height: 250px;
+    margin: -10px;
+    margin-left: 0px;
 }
 
-.descricaoitens{
-    width: 30%;
-    margin: 5px;
-    margin-left: 130px;
-    text-align: center;
-    font-size: 1.1rem;
-    font-family:'Josefin Sans';
+.imagemproduto4 {
+    width: 150px;
+    height: 250px;
+    margin: -10px;
+    margin-left: 0px;
 }
+
 
 .rodape{
     font-family: 'Josefin Sans', sans-serif;
