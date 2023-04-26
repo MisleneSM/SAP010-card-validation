@@ -1,6 +1,6 @@
 const validator = {
   isValid: function (cardNumber) { //  recebe o valor da variável 
-    const cartaoArray = cardNumber.split(''); // cria e retorna array separando elemento
+    const cartaoArray = cardNumber.split(''); // cria e retorna array separando elemento/ O array são listas de objetos
     let sumNumber = 0;
 
     for (let i = cartaoArray.length - 1; i >= 0; i--) {
@@ -28,7 +28,7 @@ const validator = {
       return true
     } else {
       return false
-    }
+    } 
   },
 
   maskify: function (cardNumber) { 
