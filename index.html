@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>MS Makeup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <img class="logo" src="./Imagens/Capa logo.png" alt="Foto do logo da Loja">
+    <nav class="cabecalho">
+      <a class="cabecalho__link" href="index.html">Início</a>
+      <a class="cabecalho__link">Produtos</a>
+      <a class="cabecalho__link">Contato</a>
+      <a class="cabecalho__link">Sobre a loja</a>
+    </nav>
+  </header>
+  <main class="main">
+    <form id="form">
+      <h1 class="intro">Bem vinda(o) a nossa loja MS Makeup</h1>
+      <div class="selectProduto">
+        <label class="selectIntro" for="name"> * Insira o produto que deseja realizar a compra: *</label>
+        <select class="botao" name="produtos" id="name">
+          <option class="botao__texto" value="rímel">Rímel</option>
+          <option class="botao__texto" value="esponja">Kit de Esponja</option>
+          <option class="botao__texto" value="batom">Batom Vermelho Matte</option>
+          <option class="botao__texto" value="base">Base Líquida</option>
+        </select>
+      </div>
+
+      <div class="texto">
+        <label class="numeroCartao" for="cartaoNumber">* Digite os números do seu cartão: *</label>
+        <input class="cartaoNumber" type="text" id="cartaoNumber" name="cartaoNumber" pattern="[0-9]+"
+          placeholder="Digite apenas números" maxlength="16" required>
+      </div>
+
+      <div class="cartao">
+        <img class="chip" src="./Imagens/chip.png" alt="Chip de Cartão Ilustrativo">
+        <p class="digitos">0000 0000 0000 0000</p>
+      </div>
+      <button class="botao__validar" id="validar" onclick="">Validar</button>
+      <p class="textResul" id="resulted"></p>
+    </form>
+    <div class="produtos">
+      <div class="descricaoItens">
+        <img class="imagemproduto1" src="./Imagens/Base.png" alt="Base Líquida Ilustrativa">
+        <p class="descricaoProdutos"> Base Líquida <br> Valor R$35,00</p>
+      </div>
+
+      <div class="descricaoItens">
+        <img class="imagemproduto2" src="./Imagens/batomvermelho.png" alt="Batom Vermelho Ilustrativo">
+        <p class="descricaoProdutos"> Batom Vermelho em alta <br> Valor R$15,00</p>
+      </div>
+
+      <div class="descricaoItens">
+        <img class="imagemproduto3" src="./Imagens/esponja.png" alt="Kit Esponja Ilustrativa">
+        <p class="descricaoProdutos"> Kit Esponja com 7 unidades <br> Valor R$5,00</p>
+      </div>
+
+      <div class="descricaoItens">
+        <img class="imagemproduto4" src="./Imagens/rimelpreto.png" alt="Rímel preto Ilustrativo">
+        <p class="descricaoProdutos"> Rímel Preto mais vendido <br> Valor R$40,00</p>
+      </div>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p class="rodapefinal">Todos os direitos reservados - © 2023</p>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
