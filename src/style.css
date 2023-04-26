@@ -125,6 +125,8 @@ body {
 }
 
 .cartao {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     height: 200px;
     background: #FF1493;
@@ -133,10 +135,29 @@ body {
     margin: 6em 90px;
 }
 
+.cartao2 {
+    background: #DA70D6;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+    border: 0;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.0em;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+}
+
+.digitos{
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
 .chip {
-    width: 400px;
-    margin: -25px;
-    margin-left: -50px;
+    display: flex;
+    width: 50%;
+    height: 50%;
 }
 
 .botao__validar {
